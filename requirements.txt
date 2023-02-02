@@ -28,6 +28,6 @@ six==1.14.0
 typing==3.7.4.1
 urllib3==1.25.8
 virtualenv==20.0.25
-Werkzeug==0.14.1
+Werkzeug==0.15.5
 wrapt==1.11.2
 zipp==1.2.0
