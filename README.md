@@ -8,4 +8,4 @@ Hopefully easy on the eyes for you late-night viewers.
 
 ## Stack: 
 - `Flask`
-- `Heroku` 
+- `Render` 
