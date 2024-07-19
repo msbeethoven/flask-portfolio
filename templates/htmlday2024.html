@@ -1,0 +1,94 @@
+{%extends "header.html"%}
+{%block bananas%}
+
+        <div class="content-wrapper">
+        <style>
+          .water {
+            color: aquamarine;
+            position: relative;
+          }
+          friend-tag {
+            color: palevioletred;
+            font-weight: bold;
+            display: inline-block;
+            animation: wiggle 2s infinite;
+          
+          }
+          @keyframes wiggle {
+            0% { transform: translate(1px, 1px) rotate(0deg); } 
+            40% { transform: translate(1px, -1px) rotate(1deg); } 
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); } 
+            70% { transform: translate(3px, 1px) rotate(-1deg); } 
+            80% { transform: translate(-1px, -1px) rotate(1deg);} 
+            90% { transform: translate(1px, 2px) rotate(0deg); } 
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+          }
+
+          @keyframes glow {
+            from {
+              text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px goldenrod, 0 0 40px goldenrod, 0 0 50px goldenrod, 0 0 60px goldenrod, 0 0 70px goldenrod;
+                }
+            to {
+              text-shadow: 0 0 20px #fff, 0 0 30px #ffcc33, 0 0 40px #ffcc33, 0 0 50px #ffcc33, 0 0 60px #ffcc33, 0 0 70px #ffcc33, 0 0 80px #ffcc33;
+              }
+          }
+          .orbs {
+            color: goldenrod;
+            animation: glow 1s ease-in-out infinite alternate;
+         }
+          .orbs:hover img,
+          .ferry:hover img,
+          .water:hover img,
+          .docks:hover img,
+          .keylime:hover img,
+          friend-tag:hover img,
+          .swingle:hover img {
+            display: block;
+          }
+          img {
+            display: none;
+            position: absolute;
+            max-width: 300px;
+          }
+          .custom {
+            font-family: Consolas, monospace;
+          } 
+          .sunset-img {
+            display: block;
+            position: static;
+          }
+    </style>
+  </head>
+  <p class="project-title"> how i'm feeling now (about html) </p>
+  <body>
+    <dialog>
+      <!-- explore what this does later  -->
+    </dialog>
+    <p>first I walked</p>
+    <!-- put pictures here  -->
+    <p>then I ran along the <i class="water">water <img src="../static/images/1.jpg" alt="Image of river, bridge, smoke stacks"/></i></p>
+    <p>
+      I took a <span class="ferry">ferry
+        <img src="../static/images/9.jpg" alt="Ferry Image"/>
+      </span>
+      from <b>E 90th</b> to <b>Wall Street</b> to <b>Red Hook</b>
+    </p>
+    <p>
+      I took a picture of the shipping container on the ferry <span class="docks">docks
+        <img src="../static/images/4.jpg" alt="Red Hook shipping container"/>
+      </span> and sent it to my <friend-tag>friend<img src="../static/images/10.jpg" alt="Extreme close up of Django, my friend's dog"/></friend-tag> because it reminded me of <a href="https://discoelysium.com/" target="_blank">disco elysium</a>.
+      <!-- maybe create own tag?? <friend></friend> what would it do? -->
+    </p>
+    <p>then I went to <b class="keylime">Steve's Authentic Key Lime Pie <img src="../static/images/5.jpg" alt="Vintage wall sign for Steve's Authentic Key Lime Pie"/></b> and got a <span class="swingle">classic swingle <img src="../static/images/6.jpg" alt="Image of a small chocolate dipped key lime tart"/></span></p>
+    <p>I met so many new people. Coming from far and near, they were all 
+      <i class="orbs">orbs <img src="../static/images/8.jpg" alt="Group of laptops with HTML projects on blankets on the grass"/></i> of inspiration.</p>
+    <details>so I experimented and wrote my first custom <span class="custom">friend-tag</span> element! </details>
+    <details>and the power of html energy was so strong it ricocheted off of trump's ear </details>
+    <br>
+    <img src="../static/images/7.jpg" class="sunset-img" alt="Image of sunset, a pier, and the Statue of Liberty"/>
+  </body>
+</div>
+
+{%endblock%}
+    

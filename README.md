@@ -9,3 +9,8 @@ Hopefully easy on the eyes for you late-night viewers.
 ## Stack: 
 - `Flask`
 - `Render` 
+
+## To run locally: 
+- `python3 -m venv venv`
+- `source venv/bin/activate`
+- `python3 app.py`
